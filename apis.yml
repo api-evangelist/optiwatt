@@ -1,8 +1,27 @@
 aid: optiwatt
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/optiwatt.png
 name: Optiwatt
-description: 'Optiwatt is a company surfaced as a portfolio company of gv and added to the API Evangelist
-  network as a stub for enrichment. Sector: frontier-tech. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: >-
+  Optiwatt is a consumer-centric energy management platform that helps electric-vehicle
+  drivers and homeowners lower their electricity bills by automatically scheduling EV
+  charging and smart-thermostat use for off-peak, low-cost, and low-carbon hours. Its
+  consumer app (getoptiwatt.com) connects to vehicles, chargers, and thermostats via
+  direct OEM integrations such as the Tesla Fleet API and aggregators like Smartcar,
+  while its utility platform (optiwatt.com) orchestrates these distributed energy
+  resources as virtual power plants across demand-response and load-shaping programs for
+  utility partners. Backed by GV. Optiwatt is primarily a consumer of third-party APIs
+  rather than a public API producer; no public developer API or OpenAPI has been found.
 url: https://raw.githubusercontent.com/api-evangelist/optiwatt/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +31,24 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
 tags:
 - Company
 - Frontier Tech
+- Energy
+- Energy Management
+- Electric Vehicles
+- EV Charging
+- Smart Home
+- DERMS
+- Demand Response
+- Utilities
+- Virtual Power Plant
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +56,19 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/optiwatt-domain-security.yml
 - type: Website
-  url: getoptiwatt.com
+  url: https://optiwatt.com/
+- type: ConsumerApp
+  url: https://getoptiwatt.com/
+- type: SignUp
+  url: https://optiwatt.com/login
+- type: Login
+  url: https://optiwatt.com/login
+- type: Support
+  url: https://optiwatt.zendesk.com/hc/en-us
+- type: PrivacyPolicy
+  url: https://www.optiwatt.com/privacy
+- type: TermsOfService
+  url: https://www.optiwatt.com/tos
